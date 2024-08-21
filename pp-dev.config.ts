@@ -4,11 +4,11 @@ const config: PPDevConfig = {
   /**
    * Backend base URL
    */
-  backendBaseURL: 'https://643.metricinsights.com',
+  backendBaseURL: 'https://example.metricinsights.com',
   /**
    * Portal page ID
    */
-  portalPageId: 85,
+  portalPageId: 1,
   /**
    * Disable MI top bar
    */
