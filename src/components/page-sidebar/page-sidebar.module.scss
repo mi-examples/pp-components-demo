@@ -1,0 +1,232 @@
+.page-sidebar {
+  width: fit-content;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  height: 100% !important;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out !important;
+
+  [class*='__nav'] {
+    transition: all 0.3s ease-in-out !important;
+    padding: 12px;
+
+    &::-webkit-scrollbar-thumb {
+      border: 2px solid var(--secondary-theme-color) !important;
+      background-color: var(--border-theme-color) !important;
+    }
+  }
+
+  &__open {
+    [class*='item-name'],
+    [class*='item-arrow'] {
+      display: block;
+    }
+  }
+
+  &__header {
+    width: 100%;
+  }
+
+  &__logo {
+    transition: all 0.2s;
+    display: block;
+    max-width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+
+    img {
+      width: 200px;
+    }
+  }
+
+  //styles for header collapse button
+  &__collapse {
+    width: fit-content;
+    height: fit-content;
+
+    line-height: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: block;
+    padding: 0;
+    margin: 0 0 18px auto;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+      fill: var(--primary-theme-color);
+    }
+  }
+
+  &__item {
+    width: 214px;
+    max-width: 214px;
+    border-radius: 4px;
+    white-space: break-spaces;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out !important;
+
+    &:has([class*='__item-button--active']) {
+      background-color: var(--secondary-theme-color);
+    }
+
+    [class*='item-icon'] > svg,
+    [class*='item-arrow'] > svg {
+      stroke: var(--primary-theme-color);
+    }
+
+    [class*='item-arrow'] {
+      margin-right: 0;
+      margin-left: auto;
+    }
+
+    [class*='item-name'] {
+      transition: all 0.3s ease-in-out !important;
+
+      font-size: 12px;
+      color: #1e1919;
+      font-weight: 700;
+      max-width: 80%;
+    }
+  }
+
+  &__link {
+    width: 214px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 4px;
+
+    [class*='item-icon'] {
+      color: #fff;
+      svg {
+        width: 16px;
+
+        path {
+          fill: var(--primary-theme-color);
+        }
+      }
+    }
+
+    [class*='item-button--active'] {
+      background-color: var(--primary-theme-color);
+
+      [class*='item-name'] {
+        color: #fff;
+      }
+
+      svg path {
+        fill: #fff;
+      }
+    }
+  }
+
+  [class*='__item-button'] {
+    max-width: inherit;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: var(--primary-theme-color-500);
+    }
+  }
+
+  //styles for active button
+  [class*='__item-button--active'] {
+    background-color: var(--primary-theme-color);
+    color: #fff;
+
+    &:hover {
+      background-color: var(--primary-theme-color);
+    }
+
+    [class*='item-name'] {
+      color: inherit;
+    }
+
+    [class*='item-icon'] > svg,
+    [class*='item-arrow'] > svg {
+      stroke: #fff;
+    }
+  }
+
+  [class*='__list'] {
+    padding-left: 16px;
+    margin-left: 0;
+    border-radius: 4px;
+
+    [class*='item-name'] {
+      font-weight: 600;
+    }
+  }
+
+  [class*='__footer'] {
+    font-size: 12px;
+    padding: 12px;
+    border: none;
+
+    .page-sidebar__link-name {
+      color: #222;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    [class*='__custom-item_']:hover {
+      background-color: var(--primary-theme-color-500);
+    }
+
+    [class*='custom-item-icon'] > img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__collapsed {
+    min-width: 72px !important;
+    width: 72px !important;
+
+    .page-sidebar {
+      &__header {
+        align-items: center;
+      }
+
+      &__collapse {
+        margin: 0 auto 37px;
+      }
+
+      &__logo > img {
+        width: 100%;
+        height: auto;
+      }
+
+      &__item,
+      &__link {
+        width: fit-content;
+      }
+    }
+
+    [class*='__nav'] {
+      overflow-x: hidden;
+    }
+
+    [class*='item-name'],
+    [class*='item-arrow'],
+    [class*='__list'] {
+      display: none;
+      max-width: 0;
+    }
+
+    [class*='__footer'] {
+      [class*='__custom-item'] {
+        padding: 0;
+        margin: 0 auto;
+      }
+
+      .page-sidebar__link-name {
+        display: none;
+      }
+    }
+  }
+}

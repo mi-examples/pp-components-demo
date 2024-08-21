@@ -1,0 +1,10 @@
+.page-loader {
+  &__loader {
+    min-width: 100%;
+    min-height: 100vh;
+
+    circle {
+      stroke: var(--primary-theme-color-500) !important;
+    }
+  }
+}

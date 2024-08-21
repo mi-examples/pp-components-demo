@@ -1,0 +1,32 @@
+.layout-base {
+  display: flex;
+  background: #F4F4F5;
+  height: 100vh;
+  padding: 24px 18px;
+  gap: 16px;
+
+  &__header {
+  }
+
+  &__aside {
+    border-radius: 8px;
+    background: #FFF;
+    height: 100%;
+  }
+
+  &__main {
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 8px;
+    background: #FFF;
+    height: 100%;
+    overflow: hidden;
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  &__footer {
+  }
+}

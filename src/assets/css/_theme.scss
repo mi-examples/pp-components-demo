@@ -1,0 +1,15 @@
+@use 'colors' as *;
+
+html[data-theme='blue'] {
+  --primary-theme-color: #{$dark-blue};
+  --primary-theme-color-500: #{$dark-blue-500};
+  --secondary-theme-color: #{$light-blue};
+  --border-theme-color: #{$border-blue};
+}
+
+html[data-theme='purple'] {
+  --primary-theme-color: #{$dark-purple};
+  --primary-theme-color-500: #{$dark-purple-500};
+  --secondary-theme-color: #{$light-purple};
+  --border-theme-color: #{$border-purple};
+}

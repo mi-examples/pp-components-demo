@@ -1,0 +1,27 @@
+.page-breadcrumbs {
+  display: flex;
+
+  a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    color: rgba(34, 34, 34, 1);
+
+    &:last-child {
+      color: rgba(34, 34, 34, 0.8);
+    }
+
+    &:only-child{
+      color: rgba(34, 34, 34, 1);
+    }
+  }
+
+  span {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,64 @@
+{
+    "tags": [
+        {
+            "portal_page_template_tag_id": "489",
+            "portal_page_template_id": "63",
+            "name": "Title",
+            "uid": "87c02ca29c03887d9256",
+            "default_value": "Components Demo",
+            "additional_options": "",
+            "tag_type": "text",
+            "tag_source": "static",
+            "javascript_code": "",
+            "display_order": "0",
+            "use_hmtl_editor_ind": "N",
+            "use_json_editor_ind": "N",
+            "description": "",
+            "use_js_code_ind": ""
+        },
+        {
+            "portal_page_template_tag_id": "490",
+            "portal_page_template_id": "63",
+            "name": "Logo",
+            "uid": "9d35661bd2afec06e618",
+            "default_value": "",
+            "additional_options": "",
+            "tag_type": "file",
+            "tag_source": "static",
+            "javascript_code": "",
+            "display_order": "1",
+            "use_hmtl_editor_ind": "N",
+            "use_json_editor_ind": "N",
+            "description": "",
+            "use_js_code_ind": ""
+        },
+        {
+            "portal_page_template_tag_id": "525",
+            "portal_page_template_id": "63",
+            "name": "External Links",
+            "uid": "34d311f212cf303a8027",
+            "default_value": "[]",
+            "additional_options": [
+                "name",
+                "link",
+                {
+                    "name": "icon",
+                    "type": "file"
+                }
+            ],
+            "tag_type": "list",
+            "tag_source": "static",
+            "javascript_code": "",
+            "display_order": "2",
+            "use_hmtl_editor_ind": "N",
+            "use_json_editor_ind": "N",
+            "description": "",
+            "use_js_code_ind": ""
+        }
+    ],
+    "settings": {
+        "image_capture_timeout": "20",
+        "image_capture_on_event": "none",
+        "image_capture_css_selector": ""
+    }
+}

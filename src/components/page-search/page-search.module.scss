@@ -1,0 +1,49 @@
+.page-search {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &__icon {
+    position: absolute;
+    left: 8px;
+
+    path {
+      fill: var(--primary-theme-color);
+    }
+  }
+
+  input {
+    display: block;
+    width: 160px;
+    height: 36px;
+    background-color: var(--secondary-theme-color);
+    border: none;
+    padding: 0 24px 0 32px;
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    &::placeholder {
+      color: rgba(34, 34, 34, 0.64);
+    }
+  }
+}
+
+.page-search-no-results {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+
+  &__caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+
+    &:not(:first-child) {
+      display: none;
+    }
+  }
+}
