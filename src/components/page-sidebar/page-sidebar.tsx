@@ -1,5 +1,5 @@
-import { FunctionComponent, useEffect, useState } from 'react';
-import { NavLink, useNavigate, useLocation } from 'react-router-dom';
+import { FunctionComponent, useState } from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { Sidebar, SidebarCustomItem, SidebarItemEvent, SidebarNavItem } from '@metricinsights/pp-components';
 import clsx from 'clsx';
 import { ReactSVG } from 'react-svg';
@@ -108,13 +108,13 @@ const PageSidebar: FunctionComponent<PageSidebarProps> = () => {
       <NavLink className={styles.pageSidebar__link} to={'/favorite'}>
         <SidebarNavItem
           className={styles.pageSidebar__item}
-          item={{ id: 'favorite', name: 'Favorites', icon: <ReactSVG src={FavoriteIcon} /> }}
+          item={{ id: 'favorite', name: 'Favorites', icon: FavoriteIcon }}
         />
       </NavLink>
       <NavLink className={styles.pageSidebar__link} to={'/'}>
         <SidebarNavItem
           className={styles.pageSidebar__item}
-          item={{ id: 'home', name: 'Home', icon: <ReactSVG src={HomeIcon} /> }}
+          item={{ id: 'home', name: 'Home', icon: HomeIcon }}
         />
       </NavLink>
     </Sidebar>

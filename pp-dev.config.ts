@@ -4,7 +4,7 @@ const config: PPDevConfig = {
   /**
    * Backend base URL
    */
-  backendBaseURL: 'https://example.metricinsights.com',
+  backendBaseURL: 'example.metricinsights.com',
   /**
    * Portal page ID
    */
