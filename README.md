@@ -82,11 +82,11 @@ export default config;
 ## Quick Setup
 
 1. Download the project.
-2. Install dependencies using npm install.
-3. Create a portal page template in MI with the internal name pp-components-demo.
-4. Upload initial-dist.zip to the assets of the portal page template.
-5. Create a new portal page using the template.
-6. Add portal page variables in the content tab.
-6. Edit pp-dev.config.ts (update backendBaseURL and portalPageId).
-7. Run the development server using npm run dev.
-8. To update the portal page, run npm run build and upload the dist.zip to the assets of the portal page template, or use the PP Dev Helper interface (sync button).
+2. Install dependencies using `npm install`
+3. Create a Portal Page Template in MI with the internal name `pp-components-demo`
+4. Upload initial-dist.zip to the assets of the Portal Page Template.
+5. Create a new Portal Page using the Template.
+6. Add Portal Page Variables in the content tab.
+6. Edit `pp-dev.config.ts` (update backendBaseURL and portalPageId).
+7. Run the development server using `npm run dev`
+8. To update the Portal Page, run `npm run build` and upload the dist.zip to the assets of the Portal Page Template, or use the PP Dev Helper interface (sync button).
